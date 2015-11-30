@@ -49,11 +49,9 @@
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {
-		one: "123"
-	}
+	var wire = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"wire\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 /***/ }
 /******/ ]);

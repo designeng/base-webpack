@@ -5,10 +5,12 @@ module.exports = {
         path: __dirname + "/dist",
         filename: "bundle.js"
     },
-    loaders: [
-		{
-	        test: /\.spec$/,
-	        loader: __dirname + '/loaders/wire/index'
-	    }
-	]
+    module: {
+        loaders: [
+    		{
+    	        test: /\.spec$/,
+    	        loader: __dirname + '/loaders/wire/index'
+    	    }
+    	]
+    }
 }

@@ -2,10 +2,11 @@ var webpack = require("webpack");
 
 module.exports = {
     context: __dirname + "/app",
-    entry: "./index",
+    entry: "./index.js",
     output: {
-        path: __dirname + "/dist",
-        filename: "bundle.js"
+        path: __dirname + "/public/build/",
+        filename: "bundle.js",
+        chunkFilename: "[id].bundle.js"
     },
     module: {
         loaders: [
@@ -23,6 +24,6 @@ module.exports = {
             "app",
             "node_modules"
         ],
-        extensions: [".json", ".js", ".spec"]
+        extensions: [".json", ".js"]
     },
 }

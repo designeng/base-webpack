@@ -1,5 +1,4 @@
 var webpack = require("webpack");
-var umdRequireWebpackPlugin = require("umd-require-webpack-plugin");
 
 module.exports = {
     context: __dirname + "/app",
@@ -10,16 +9,14 @@ module.exports = {
     },
     module: {
         loaders: [
-    		{
-    	        test: /\.spec$/,
-    	        loader: __dirname + '/loaders/wire/index'
-    	    }
-            // {include: /\.js$/, loaders: ["babel-loader?stage=0&optional=runtime&plugins=typecheck"], exclude: /node_modules/}
+            {   
+                test: /\.js$/, 
+                loader: 'babel',
+                exclude: /node_modules/
+            }
     	]
     },
     plugins: [
-        // new webpack.DefinePlugin({ "global.GENTLY": false }),
-        // new umdRequireWebpackPlugin()
     ],
     resolve: {
         modulesDirectories: [

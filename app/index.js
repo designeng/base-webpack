@@ -1,6 +1,6 @@
 console.log("INDEX MODULE");
 
-require.ensure(["./test"], function(require) {
+require.ensure(["./root"], function(require) {
     var one = require("./one");
     var two = require("./two");
 });

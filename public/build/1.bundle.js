@@ -6,7 +6,7 @@ webpackJsonp([1],[
 	"use strict";
 
 	// one
-	console.log("TEST MODULE");
+	console.log("ROOT MODULE");
 
 /***/ },
 /* 2 */

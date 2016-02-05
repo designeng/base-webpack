@@ -2,7 +2,7 @@ var webpack = require("webpack");
 
 module.exports = {
     context: __dirname + "/app",
-    entry: "./index.js",
+    entry: "./index",
     output: {
         path: __dirname + "/public/build/",
         filename: "bundle.js",

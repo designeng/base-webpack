@@ -1,4 +1,4 @@
 // one
-export default function log() {
+module.exports = function log() {
     console.log("ONE MODULE");
 }

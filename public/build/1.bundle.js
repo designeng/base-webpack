@@ -9,21 +9,7 @@ webpackJsonp([1],[
 	console.log("ROOT MODULE");
 
 /***/ },
-/* 2 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = log;
-	// one
-	function log() {
-	    console.log("ONE MODULE");
-	}
-
-/***/ },
+/* 2 */,
 /* 3 */
 /***/ function(module, exports) {
 
@@ -31,6 +17,17 @@ webpackJsonp([1],[
 
 	// two
 	console.log("TWO MODULE");
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	// one
+	module.exports = function log() {
+	    console.log("ONE MODULE");
+	};
 
 /***/ }
 ]);

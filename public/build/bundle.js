@@ -100,7 +100,8 @@
 	console.log("INDEX MODULE");
 
 	__webpack_require__.e/* nsure */(1, function (require) {
-	    var one = __webpack_require__(2);
+	    var log = __webpack_require__(4);
+	    log();
 	    var two = __webpack_require__(3);
 	});
 

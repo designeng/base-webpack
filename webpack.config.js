@@ -16,7 +16,7 @@ module.exports = {
                 loader: 'babel',
                 exclude: /node_modules/
             }
-    	]
+        ]
     },
     plugins: [
     ],

@@ -99,11 +99,35 @@
 
 	console.log("INDEX MODULE");
 
+	var lib1 = __webpack_require__(5);
+
 	__webpack_require__.e/* nsure */(1, function (require) {
-	    var log = __webpack_require__(4);
+	    var log = __webpack_require__(2);
 	    log();
-	    var two = __webpack_require__(3);
 	});
+
+/***/ },
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	// two
+	console.log("TWO MODULE");
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
+
+	!(__WEBPACK_AMD_DEFINE_RESULT__ = function (require) {
+	    var two = __webpack_require__(4);
+	    console.log("1234567");
+	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ }
 /******/ ]);

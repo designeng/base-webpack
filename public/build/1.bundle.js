@@ -9,24 +9,14 @@ webpackJsonp([1],[
 	console.log("ROOT MODULE");
 
 /***/ },
-/* 2 */,
-/* 3 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	// two
-	console.log("TWO MODULE");
-
-/***/ },
-/* 4 */
+/* 2 */
 /***/ function(module, exports) {
 
 	"use strict";
 
 	// one
 	module.exports = function log() {
-	    console.log("ONE MODULE");
+	    console.log("LOG MODULE");
 	};
 
 /***/ }

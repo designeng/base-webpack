@@ -19,6 +19,9 @@ module.exports = {
         ]
     },
     plugins: [
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     name: 'common'
+        // })
     ],
     resolve: {
         modulesDirectories: [

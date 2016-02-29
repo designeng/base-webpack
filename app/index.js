@@ -5,4 +5,5 @@ var lib1 = require("./lib1");
 require.ensure(["./root"], function(require) {
     var log = require("./log");
     log();
+    console.log(typeof {});
 });

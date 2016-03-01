@@ -15,3 +15,9 @@ document.getElementById('two').onclick = function() {
         var two = require("./assets/two");
     }, 'assets');
 }
+
+document.getElementById('three').onclick = function() {
+    require.ensure([], function(require) {
+        var three = require("./assets/three");
+    });
+}

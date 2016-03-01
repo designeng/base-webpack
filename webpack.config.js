@@ -21,9 +21,6 @@ module.exports = {
         noParse: /wire\/wire.js/
     },
     plugins: [
-        // new webpack.optimize.CommonsChunkPlugin({
-        //     name: 'common'
-        // })
     ],
     resolve: {
         modulesDirectories: [

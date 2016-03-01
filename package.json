@@ -13,8 +13,7 @@
   "dependencies": {
     "babel": "^6.1.18",
     "body-parser": "^1.14.1",
-    "express": "^4.13.3",
-    "wire": "^0.10.11"
+    "express": "^4.13.3"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",

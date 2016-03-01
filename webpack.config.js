@@ -16,7 +16,9 @@ module.exports = {
                 loader: 'babel',
                 exclude: /node_modules/
             }
-        ]
+        ],
+
+        noParse: /wire\/wire.js/
     },
     plugins: [
         // new webpack.optimize.CommonsChunkPlugin({

@@ -1,8 +1,4 @@
-// var wire = require('wire');
-
 console.log("INDEX MODULE");
-
-// var lib1 = require("./lib1");
 
 document.getElementById('one').onclick = function() {
     require.ensure([], function(require) {

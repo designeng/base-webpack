@@ -13,7 +13,8 @@
   "dependencies": {
     "babel": "^6.1.18",
     "body-parser": "^1.14.1",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "essential-wire": "git://github.com/designeng/essential-wire"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",

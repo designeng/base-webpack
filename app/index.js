@@ -1,3 +1,4 @@
+var wire = require('essential-wire');
 console.log("INDEX MODULE");
 
 var spec = require('./specs/component.spec.coffee');
@@ -20,3 +21,9 @@ document.getElementById('three').onclick = function() {
         var three = require("./assets/three");
     }, 'other');
 }
+
+wire(spec).then(function(context){
+    console.log(console.log(context));
+}).otherwise(function(error){
+    console.log(console.log(error));
+})

@@ -1,11 +1,17 @@
-var wire = require('wire');
+// var wire = require('wire');
 
 console.log("INDEX MODULE");
 
-var lib1 = require("./lib1");
+// var lib1 = require("./lib1");
 
-require.ensure(["./root"], function(require) {
-    var log = require("./log");
-    log();
-    console.log(typeof {});
-});
+document.getElementById('one').onclick = function() {
+    require.ensure([], function(require) {
+        var one = require("./assets/one");
+    }, 'assets');
+}
+
+document.getElementById('two').onclick = function() {
+    require.ensure([], function(require) {
+        var two = require("./assets/two");
+    }, 'assets');
+}

@@ -1,4 +1,5 @@
 var webpack = require("webpack");
+var specLoader = require("./loaders/specLoader");
 
 module.exports = {
     context: __dirname + "/app",
@@ -12,6 +13,11 @@ module.exports = {
     module: {
         loaders: [
             {   
+                test: /\.spec\.coffee$/, 
+                loaders: ['../loaders/specLoader'],
+                exclude: /node_modules/
+            },
+            {   
                 test: /\.js$/, 
                 loader: 'babel',
                 exclude: /node_modules/
@@ -19,12 +25,5 @@ module.exports = {
         ]
     },
     plugins: [
-    ],
-    resolve: {
-        modulesDirectories: [
-            "app",
-            "node_modules"
-        ],
-        extensions: [".json", ".js"]
-    },
+    ]
 }

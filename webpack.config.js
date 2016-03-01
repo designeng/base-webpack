@@ -16,9 +16,7 @@ module.exports = {
                 loader: 'babel',
                 exclude: /node_modules/
             }
-        ],
-
-        noParse: /wire\/wire.js/
+        ]
     },
     plugins: [
     ],
